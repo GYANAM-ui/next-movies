@@ -1,10 +1,9 @@
-
 import css from 'styled-jsx/css';
 
 import theme from './theme';
 import CLASS_NAMES from 'utils/constants/class-names';
 
-export default css.global`
+export default css.global `
   :root {
     color-scheme: light dark;
     --duration: 0.5s;
@@ -122,6 +121,10 @@ export default css.global`
     box-sizing: inherit;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+  }
+
+  .lazyload-wrapper {
+    border-radius: 10px;
   }
 
   html {

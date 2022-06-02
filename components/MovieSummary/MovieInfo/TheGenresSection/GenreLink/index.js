@@ -38,6 +38,9 @@ const GenreLink = ({
         font-size: 1.25rem;
         font-weight: ${theme.typography.fontWeightBold};
         text-transform: uppercase;
+        padding: 10px;
+        border-radius: 10px;
+        background: white;
       }
     
       a:not(:last-child) {
@@ -45,7 +48,7 @@ const GenreLink = ({
       }
     
       a:hover {
-        text-decoration: underline;
+        transform: scale(1.1);
       }
     
       a:active {

@@ -27,6 +27,7 @@ const PosterLink = React.forwardRef(({
         display: flex;
         flex-direction: column;
         transition: transform ${theme.transitions.duration.shortest}ms ${theme.transitions.easing.easeInOut};
+        border-radius: 10px;
       }
     
       // TODO: could follow the practices for hover effect from https://web.dev/authors/addyosmani 

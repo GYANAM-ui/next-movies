@@ -53,7 +53,10 @@ const MovieListItem = ({
     <style jsx>{`
       :global(.${POSTER_LINK_CLASS_NAME}:hover .${CLASS_NAMES.IMAGE_LOADING_PLACEHOLDER}) {
         box-shadow: ${theme.shadows[0]};
-        border-radius: 0;
+      }
+
+      :global(.lazyload-wrapper) {
+        border-radius: 10px;
       }
 
       :global(.${POSTER_LINK_CLASS_NAME}:hover .${POSTER_TITLE_CLASS_NAME}) {

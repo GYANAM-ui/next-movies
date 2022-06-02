@@ -22,19 +22,29 @@ const MenuItemLink = React.forwardRef(({
         {children}
       </a>
     </Link>
+    <hr />
     <style jsx>{`
       a {
         outline: none;
         display: block;
+        margin-top: 10px;
         margin-bottom: 0.5rem;
-        font-size: 1.25rem;
+        font-size: 15px;
         font-weight: ${theme.typography.fontWeightBold};
         line-height: 1;
         color: ${selected ? 'var(--palette-secondary-main)' : 'var(--palette-primary-main)'};
+        border-radius: 10px;
+        padding: 10px;
       }
 
       a:hover {
-        text-decoration: underline;
+        background-color: #000000;
+      }
+
+      hr {
+        height: 1px;
+        background: transparent;
+        color: transparent;
       }
     `}</style>
   </>

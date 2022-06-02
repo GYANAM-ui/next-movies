@@ -17,6 +17,7 @@ import PageWrapper from 'parts/PageWrapper';
 import PaddingWrapper from 'parts/PaddingWrapper';
 import MovieList from 'components/MovieList';
 import Loader from 'components/UI/Loader';
+import Footer from 'components/Footer';
 import setSelectedMenuItemName from 'actions/setSelectedMenuItemName';
 import getStaticCategoryMovies from 'actions/getStaticCategoryMovies';
 import clearMovies from 'actions/clearMovies';
@@ -107,7 +108,7 @@ const Home = () => {
           // TODO: page is hardcoded
           href={`${TMDB_API_BASE_URL}/${TMDB_API_VERSION}/movie/popular?api_key=${TMDB_API_KEY}&page=1`}
           crossOrigin='true' />
-        <title>{`${general.selectedMenuItemName} Movies`}</title>
+        <title>Parrelex Movies | {`${general.selectedMenuItemName} Movies`}</title>
       </Head>
       {movies.loading ? (
         <Loader />
@@ -121,6 +122,7 @@ const Home = () => {
               movies={movies}
               baseUrl={baseUrl} />
           </PaddingWrapper>
+          <Footer />
         </PageWrapper>
       )}
     </>

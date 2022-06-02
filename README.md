@@ -59,8 +59,7 @@ Built with:
   
 ## Authors
 
-- [@anton-karlovskiy](https://github.com/anton-karlovskiy)
-- [@addyosmani](https://github.com/addyosmani)
+- [@GYANAM-ui](https://github.com/GYANAM-ui)
 
 Based on the original `create-react-app` foundation by [@fidalgodev](https://github.com/fidalgodev/movie-library-react).
 
